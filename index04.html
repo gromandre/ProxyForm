@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html class="no-js">
 <head>
-<meta charset="utf-8">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 <body>
     <form id="forma4">
@@ -10,13 +10,13 @@
         <input type="text" name="name4">
          <br><br>
         <span>Ваш телефон:</span><br>
-        <input type="tel" name="phone4">
+        <input type="phone" name="phone4">
          <br><br>
         <span>Ваш email:</span><br>
         <input type="email" name="email4">
          <br><br>
         <span>Комментарий:</span><br>
-        <textarea name="comment4" rows="5" cols="45" maxlength="100"></textarea>
+        <textarea name="comment" rows="5" cols="45" maxlength="100"></textarea>
          <br><br>
         <span><b>Сейчас первая половина дня?</b></span>
         <p><input class="rad1" name="first" type="radio" value="Да">Да</p>
@@ -32,15 +32,15 @@
         <option value="Более 5-ти">Более 5-ти</option>
         </select>
          <br><br>
-        <button class="button4" type="submit">Отправить</button>
+        <button class="button4" type="submit" name="submit">Отправить</button>
     </form>
     <script>
         (function(w, d, s, h, id) {
-            w.roistatProjectId = id; w.roistatHost = h;
-            var p = d.location.protocol == "https:" ? "https://" : "http://";
-            var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init?referrer="+encodeURIComponent(d.location.href);
-            var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
-        })(window, document, 'script', 'cloud.roistat.com', 'cb88d81007ff0689acbb5569d6dfa24b');
+        w.roistatProjectId = id; w.roistatHost = h;
+        var p = d.location.protocol == "https:" ? "https://" : "http://";
+        var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init?referrer="+encodeURIComponent(d.location.href);
+        var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+        })(window, document, 'script', 'cloud.roistat.com', 'c271979170b6ab75ed3e463d0939437f');
     </script>
 </body>
 </html>
